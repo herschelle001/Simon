@@ -18,7 +18,6 @@ body {
 .top {
     margin-top: -100vh;
     margin-bottom: -3vh;
-    margin-right: -4vh;
     z-index: 1;
 }
 
@@ -29,7 +28,7 @@ body {
 
 .start {
     position: relative;
-    margin-bottom: 2vh;
+    margin-bottom: 1vh;
     z-index: 1;
 }
 
@@ -45,13 +44,13 @@ body {
 
 #match {
     height: 20vh;
-    width: 20vh;
+    width: 25vh;
     z-index: 1;
 }
 
 #top_poop {
-    height: 20vh;
-    width: 29vh;
+    height: 22vh;
+    width: 33vh;
     z-index: 1;
 }
 
@@ -61,25 +60,25 @@ body {
     z-index: 1;
 }
 #yellow_poop {
-    height: 20vh;
-    width: 20vh;
+    height: 22vh;
+    width: 22vh;
     z-index: 1;
 }
 
 #red_poop {
-    height: 20vh;
-    width: 20vh;
+    height: 22vh;
+    width: 22vh;
     z-index: 1;
 }
 
 #blue_poop {
-    height: 20vh;
-    width: 20vh;
+    height: 22vh;
+    width: 22vh;
     z-index: 1;
 }
 
 #green_poop {
-    height: 20vh;
-    width: 20vh;
+    height: 22vh;
+    width: 22vh;
     z-index: 1;
 }
