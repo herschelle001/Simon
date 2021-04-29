@@ -17,34 +17,28 @@ body {
 
 .second {
     position: relative;
-    bottom: 85rem;
 }
 
 .third {
     position: relative;
-    bottom: 85rem;
 }
 
 #yellow_poop {
-    margin-right: 1rem;
     height: 20vh;
     width: 20vh;
 }
 
 #red_poop {
-    margin-left: 1rem;
     height: 20vh;
     width: 20vh;
 }
 
 #blue_poop {
-    margin-right: 1rem;
     height: 20vh;
     width: 20vh;
 }
 
 #green_poop {
-    margin-left: 1rem;
     height: 20vh;
     width: 20vh;
 }
