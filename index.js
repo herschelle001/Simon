@@ -26,7 +26,9 @@ $("#play_again").click(function () {
     startGame();
 });
 
-$(".blocks").click(function () {
+$(".blocks").click(pattern_checker);
+
+function pattern_checker() {
     if (on) {
         if (start) {
             b.push($(this).attr("id"));
@@ -54,11 +56,6 @@ $(".blocks").click(function () {
                 }, 100);
                 $("#game-div").addClass("hide");
                 $("#game-over-div").removeClass("hide");
-                // i = $(this).attr("id");
-                // $(this).addClass("pressed_" + i);
-                // setTimeout(function () {
-                //     $(p).removeClass("pressed_" + i);
-                // }, 100);
                 var audio = new Audio('Sound/wrong.wav');
                 audio.play();
                 on = false;
@@ -70,8 +67,7 @@ $(".blocks").click(function () {
         }
     }
 
-});
-
+}
 
 function startGame () {
     start = true;
