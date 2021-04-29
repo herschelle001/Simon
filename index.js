@@ -17,14 +17,13 @@ setInterval(function () {
     $('#start_button').css('transform', 'scale(' + scale + ')');
 }, 1000)
 
-$("#start_button").click(function () {
-    start = true;
-    a = [];
-    b = [];
-    on = false;
-    level();
-    document.getElementById("start_button").style.display = "none";
-    $("#level_button").removeClass("hide_level_button");
+
+$("#start_button").click(startGame);
+
+$("#play_again").click(function () {
+    $("#game-div").removeClass("hide");
+    $("#game-over-div").addClass("hide");
+    startGame();
 });
 
 $(".blocks").click(function () {
@@ -53,7 +52,13 @@ $(".blocks").click(function () {
                 setTimeout(function () {
                     $("body").removeClass("game-over");
                 }, 100);
-                $("h1").text("Game-over press Reset button to restart the game");
+                $("#game-div").addClass("hide");
+                $("#game-over-div").removeClass("hide");
+                // i = $(this).attr("id");
+                // $(this).addClass("pressed_" + i);
+                // setTimeout(function () {
+                //     $(p).removeClass("pressed_" + i);
+                // }, 100);
                 var audio = new Audio('Sound/wrong.wav');
                 audio.play();
                 on = false;
@@ -66,6 +71,18 @@ $(".blocks").click(function () {
     }
 
 });
+
+
+function startGame () {
+    start = true;
+    a = [];
+    b = [];
+    on = false;
+    level();
+    document.getElementById("start_button").style.display = "none";
+    $("#level_button").removeClass("hide");
+}
+
 
 function level() {
     flash = 0;

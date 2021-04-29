@@ -37,12 +37,12 @@ body {
     position: relative;
 }
 
-#bubble {
+#welcome_bubble {
     height: 20vh;
     width: 25vh;
 }
 
-#top_poop {
+#top_poop-1 {
     height: 20vh;
     width: 33vh;
 }
@@ -68,7 +68,7 @@ body {
     margin-top: 1vh;
 }
 
-.hide_level_button {
+.hide {
     display: none;
 }
 
@@ -113,5 +113,29 @@ body {
   box-shadow: 0 0 20px #FFB90B;
   background-color: #FFB90B;
     filter: contrast(50%);
+}
+
+
+#game_over_bubble {
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    height: 20vh;
+    width: 25vh;
+}
+
+#top_poop-2 {
+    height: 25vh;
+    width: 40vh;
+}
+
+#high_score {
+    height: 12vh;
+    width: 40vh;
+    margin-bottom: 2vh;
+}
+
+#play_again {
+    height: 7vh;
+    width: 20vh;
 }
 
