@@ -53,8 +53,15 @@ function pattern_checker() {
                 setTimeout(function () {
                     $("body").removeClass("game-over");
                 }, 100);
-                $("#game-div").addClass("hide");
-                $("#game-over-div").removeClass("hide");
+                $("#score_text").html(giveScore());
+                i = $(this).attr("id");
+                var p = this;
+                $(this).addClass("pressed_" + i);
+                setTimeout(function () {
+                    $(p).removeClass("pressed_" + i);
+                    $("#game-div").addClass("hide");
+                    $("#game-over-div").removeClass("hide");
+                }, 100);
                 var audio = new Audio('Sound/wrong.wav');
                 audio.play();
                 on = false;
@@ -107,4 +114,19 @@ function lightOn() {
         on = true;
         console.log(on);
     }
+}
+
+function giveScore(){
+    var score = (a.length-1).toString();
+    var highScore = score.toString();
+    var text = score;
+    if(score.length+highScore.length<29){
+        for(var j =0;j<29-score.length-highScore.length;j++){
+            text = text+"\xa0";
+        }
+    }
+    else
+        text =text+"\xa0";
+    text = text+highScore;
+    return text;
 }
