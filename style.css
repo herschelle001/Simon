@@ -41,6 +41,11 @@ body {
     /*margin-bottom: -110vh;*/
 }
 
+#match {
+    height: 20vh;
+    width: 20vh;
+}
+
 #top_poop {
     height: 20vh;
     width: 29vh;
