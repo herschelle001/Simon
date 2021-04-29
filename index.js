@@ -5,7 +5,6 @@ var color = ["green_poop", "red_poop", "yellow_poop", "blue_poop"];
 var start = false;
 let flash = 0;
 var on = false;
-//document.getElementById("level_button1").style.display="none"
 var id = null;
 var elem = document.getElementById("start_button");
 const size_width = elem.style.width;
@@ -82,7 +81,9 @@ function startGame () {
 
 function level() {
     flash = 0;
-    $("#level_button").text("Level " + (a.length + 1));
+    var level_number = (a.length + 1);
+    level_number =level_number.toString();
+    $("#level_button").text("Level : " +level_number );
     sound();
 }
 

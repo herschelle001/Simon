@@ -54,14 +54,20 @@ body {
     height: 10vh;
 }
 
+@font-face {
+  font-family: myFirstFont;
+  src: url("Font/OpenSans-Bold.ttf");
+}
+
 #level_button {
     z-index: 2;
+    border: none;
     border-radius: 1vh;
-    font-family: Arial, serif;
-    color: #ffffff;
+    font-family: myFirstFont;
+    color: black;
     font-size: 3vh;
     background: #F15A24;
-    text-decoration: none;
+    text-decoration: black;
     width: 25vh;
     height: 6vh;
     margin-bottom: 3vh;
@@ -92,7 +98,6 @@ body {
     height: 20vh;
     width: 20vh;
 }
-
 
 .pressed_green_poop {
   box-shadow: 0 0 20px #009444;
