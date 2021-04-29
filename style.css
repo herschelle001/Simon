@@ -31,10 +31,12 @@ body {
 
 .second {
     position: relative;
+    margin-bottom: 0.7vh;
 }
 
 .third {
     position: relative;
+    margin-top: 0.7vh;
 }
 
 #match {
@@ -54,19 +56,23 @@ body {
 #yellow_poop {
     height: 20vh;
     width: 20vh;
+    margin-right: 0.7vh;
 }
 
 #red_poop {
     height: 20vh;
     width: 20vh;
+    margin-left: 0.7vh;
 }
 
 #blue_poop {
     height: 20vh;
     width: 20vh;
+    margin-right: 0.7vh;
 }
 
 #green_poop {
     height: 20vh;
     width: 20vh;
+    margin-left: 0.7vh;
 }
