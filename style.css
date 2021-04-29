@@ -17,7 +17,7 @@ body {
 
 .top {
     margin-top: -100vh;
-    margin-right: -10vh;
+    margin-right: -7vh;
     margin-bottom: -5vh;
 }
 
@@ -40,6 +40,11 @@ body {
 .third {
     position: relative;
     /*margin-bottom: -110vh;*/
+}
+
+#top_poop {
+    height: 20vh;
+    width: 29vh;
 }
 
 #start_button {
