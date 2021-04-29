@@ -6,6 +6,7 @@ var start = false;
 let flash = 0;
 var on = false;
 var id = null;
+var localStorageName = "crackalien";
 var elem = document.getElementById("start_button");
 const size_width = elem.style.width;
 const size_height = elem.height;
@@ -118,7 +119,12 @@ function lightOn() {
 
 function giveScore(){
     var score = (a.length-1).toString();
-    var highScore = score.toString();
+    var highScore = localStorage.getItem(localStorageName) == null ? 0 :
+            localStorage.getItem(localStorageName);
+    highScore = Math.max((a.length)-1,highScore);
+    highScore = localStorage.setItem(localStorageName, highScore);
+    console.log(highScore);
+    highScore = highScore.toString();
     var text = score;
     if(score.length+highScore.length<29){
         for(var j =0;j<29-score.length-highScore.length;j++){
