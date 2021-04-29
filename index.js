@@ -75,7 +75,7 @@ function pattern_checker() {
 
 }
 
-function startGame () {
+function startGame() {
     start = true;
     a = [];
     b = [];
@@ -89,8 +89,8 @@ function startGame () {
 function level() {
     flash = 0;
     var level_number = (a.length + 1);
-    level_number =level_number.toString();
-    $("#level_button").text("Level : " +level_number );
+    level_number = level_number.toString();
+    $("#level_button").text("Level : " + level_number);
     sound();
 }
 
@@ -116,17 +116,16 @@ function lightOn() {
     }
 }
 
-function giveScore(){
-    var score = (a.length-1).toString();
+function giveScore() {
+    var score = (a.length - 1).toString();
     var highScore = score.toString();
     var text = score;
-    if(score.length+highScore.length<29){
-        for(var j =0;j<29-score.length-highScore.length;j++){
-            text = text+"\xa0";
+    if (score.length + highScore.length < 29) {
+        for (var j = 0; j < 29 - score.length - highScore.length; j++) {
+            text = text + "\xa0";
         }
-    }
-    else
-        text =text+"\xa0";
-    text = text+highScore;
+    } else
+        text = text + "\xa0";
+    text = text + highScore;
     return text;
 }
