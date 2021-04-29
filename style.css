@@ -15,29 +15,29 @@ body {
     max-height: 100vh;
 }
 
-.top {
+.bubble {
     margin-top: -100vh;
     margin-bottom: -3vh;
 }
 
-.first {
+.top_poop {
     position: relative;
 }
 
-.start {
+.start_button {
     position: relative;
     margin-bottom: 1vh;
 }
 
-.second {
+.top_section {
     position: relative;
 }
 
-.third {
+.bottom_section {
     position: relative;
 }
 
-#match {
+#bubble {
     height: 20vh;
     width: 25vh;
 }
@@ -51,8 +51,28 @@ body {
     transform: scale(1);
     transition: transform 250ms ease-in-out;
     width: 30vh;
-    height: 12vh;
+    height: 10vh;
 }
+
+#level_button {
+    z-index: 2;
+    border-radius: 1vh;
+    font-family: Arial, serif;
+    color: #ffffff;
+    font-size: 3vh;
+    background: #F15A24;
+    text-decoration: none;
+    width: 25vh;
+    height: 6vh;
+    margin-bottom: 3vh;
+    margin-top: 1vh;
+}
+
+.hide_level_button {
+    display: none;
+}
+
+
 #yellow_poop {
     height: 20vh;
     width: 20vh;
@@ -72,21 +92,7 @@ body {
     height: 20vh;
     width: 20vh;
 }
-#level_button1 {
-    position: absolute;
-    transform: translate(-315px, 298px);
-    z-index: 2;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    font-family: Arial, serif;
-    color: #ffffff;
-    font-size: 25px;
-    background: #F15A24;
-    text-decoration: none;
-    width: 210px;
-    height: 50px;
-}
+
 
 .pressed_green_poop {
   box-shadow: 0 0 20px #009444;
