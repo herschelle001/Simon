@@ -15,15 +15,20 @@ body {
     max-height: 100vh;
 }
 
-.first {
-    position: absolute;
-    bottom: 5vh;
-}
+/*.first {*/
+/*    position: relative;*/
+/*    bottom: 50vh;*/
+/*    margin-bottom: -100vh;*/
+/*}*/
 
 .second {
+    position: relative;
+    margin-top: -50vh;
 }
 
 .third {
+    position: relative;
+    margin-bottom: -100vh;
 }
 
 #yellow_poop {
