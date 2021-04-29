@@ -6,11 +6,7 @@ body {
     margin: 0;
     padding: 0;
 }
-.imgbox {
-    /*display: grid;*/
 
-    /*height: 100%;*/
-}
 .center-fit {
     max-height: 100vh;
 }
@@ -134,12 +130,20 @@ body {
 }
 
 #high_score {
-    height: 12vh;
-    width: 40vh;
     margin-bottom: 2vh;
+    margin-top: 1vh;
+    width: 40vh;
+    height: 12vh;
+}
+
+#score {
+    font-family: myFirstFont;
+    font-size: 3vh;
+    margin-top: -8vh;
 }
 
 #play_again {
+    margin-top: 2vh;
     height: 7vh;
     width: 20vh;
 }
