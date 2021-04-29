@@ -18,59 +18,68 @@ body {
 .top {
     margin-top: -100vh;
     margin-bottom: -3vh;
+    margin-right: -4vh;
+    z-index: 1;
 }
 
 .first {
     position: relative;
-    /*margin-top: -90vh;*/
-    /*margin-bottom: 10vh;*/
+    z-index: 1;
 }
 
 .start {
     position: relative;
     margin-bottom: 2vh;
+    z-index: 1;
 }
 
 .second {
     position: relative;
-    /*margin-top: -60vh;*/
+    z-index: 1;
 }
 
 .third {
     position: relative;
-    /*margin-bottom: -110vh;*/
+    z-index: 1;
 }
 
 #match {
     height: 20vh;
     width: 20vh;
+    z-index: 1;
 }
 
 #top_poop {
     height: 20vh;
     width: 29vh;
+    z-index: 1;
 }
 
 #start_button {
     width: 30vh;
     height: 12vh;
+    z-index: 1;
 }
 #yellow_poop {
     height: 20vh;
     width: 20vh;
+    z-index: 1;
 }
 
 #red_poop {
     height: 20vh;
     width: 20vh;
+    z-index: 1;
 }
 
 #blue_poop {
     height: 20vh;
     width: 20vh;
+    z-index: 1;
 }
 
 #green_poop {
     height: 20vh;
     width: 20vh;
+    z-index: 1;
 }
