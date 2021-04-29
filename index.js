@@ -32,7 +32,7 @@ function pattern_checker() {
         if (start) {
             b.push($(this).attr("id"));
             if (a[b.length - 1] === $(this).attr("id")) {
-                var p = this;
+                p = this;
                 var i = $(this).attr("id");
                 var image = $("#" + i)
                 $(this).addClass("pressed_" + i);
