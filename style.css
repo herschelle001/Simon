@@ -17,10 +17,12 @@ body {
 
 .second {
     position: relative;
+    bottom: 45vh;
 }
 
 .third {
     position: relative;
+    bottom: 45vh;
 }
 
 #yellow_poop {
