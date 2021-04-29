@@ -27,7 +27,7 @@
 
 #yellow_poop {
     position: absolute;
-    transform: translate(-410px, 370px);
+    transform: translate(-400px, 370px);
     z-index: 1;
 }
 
@@ -39,7 +39,7 @@
 
 #blue_poop {
     position: absolute;
-    transform: translate(-410px, 570px);
+    transform: translate(-400px, 570px);
     z-index: 1;
 }
 
