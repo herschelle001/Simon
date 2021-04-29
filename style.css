@@ -15,22 +15,37 @@ body {
     max-height: 100vh;
 }
 
-/*.first {*/
-/*    position: relative;*/
-/*    bottom: 50vh;*/
-/*    margin-bottom: -100vh;*/
-/*}*/
+.top {
+    margin-top: -100vh;
+    margin-right: -10vh;
+    margin-bottom: -5vh;
+}
+
+.first {
+    position: relative;
+    /*margin-top: -90vh;*/
+    /*margin-bottom: 10vh;*/
+}
+
+.start {
+    position: relative;
+    margin-bottom: 2vh;
+}
 
 .second {
     position: relative;
-    margin-top: -50vh;
+    /*margin-top: -60vh;*/
 }
 
 .third {
     position: relative;
-    margin-bottom: -100vh;
+    /*margin-bottom: -110vh;*/
 }
 
+#start_button {
+    width: 30vh;
+    height: 12vh;
+}
 #yellow_poop {
     height: 20vh;
     width: 20vh;
