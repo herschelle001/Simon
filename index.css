@@ -6,4 +6,6 @@ body, html {
 }
 
 #background-div {
+    height: 100%;
+    width: 100%;
 }
