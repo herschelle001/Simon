@@ -18,34 +18,34 @@ body {
 
 .second {
     position: relative;
-    bottom: 87em;
+    bottom: 85rem;
 }
 
 .third {
     position: relative;
-    bottom: 85em;
+    bottom: 85rem;
 }
 
 #yellow_poop {
-    margin-right: 1em;
-    height: 40em;
-    width: 40em;
+    margin-right: 1rem;
+    height: 40rem;
+    width: 40rem;
 }
 
 #red_poop {
-    margin-left: 1em;
-    height: 40em;
-    width: 40em;
+    margin-left: 1rem;
+    height: 40rem;
+    width: 40rem;
 }
 
 #blue_poop {
-    margin-right: 1em;
-    height: 40em;
-    width: 40em;
+    margin-right: 1rem;
+    height: 40rem;
+    width: 40rem;
 }
 
 #green_poop {
-    margin-left: 1em;
-    height: 40em;
-    width: 40em;
+    margin-left: 1rem;
+    height: 40rem;
+    width: 40rem;
 }
