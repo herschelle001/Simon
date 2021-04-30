@@ -108,7 +108,6 @@ function lightOn() {
     } else if (flash === a.length) {
         clearInterval(interval)
         on = true;
-        // console.log(on);
     }
 }
 
