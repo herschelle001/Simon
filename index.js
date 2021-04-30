@@ -2,7 +2,7 @@ var a = [];
 var b = [];
 var color = ["green_poop", "red_poop", "yellow_poop", "blue_poop"];
 var start = false;
-var flash = 0;
+let flash = 0;
 var on = false;
 var id = null;
 var localStorageName = "crackalien";
@@ -29,13 +29,13 @@ function pattern_checker() {
         if (start) {
             b.push($(this).attr("id"));
             if (a[b.length - 1] === $(this).attr("id")) {
-                var p = this;
+                p = this;
                 var i = $(this).attr("id");
                 $(this).addClass("pressed_" + i);
                 setTimeout(function () {
                     $(p).removeClass("pressed_" + i);
                 }, 100);
-                var audio = new Audio('Sound/' + $(this).attr("id") + '.wav');
+                audio = new Audio('Sound/' + $(this).attr("id") + '.wav');
                 audio.play();
                 if (a.length === b.length) {
                     setTimeout(function () {
@@ -51,14 +51,14 @@ function pattern_checker() {
                 }, 100);
                 $("#score_text").html(giveScore());
                 i = $(this).attr("id");
-                p = this;
+                var p = this;
                 $(this).addClass("pressed_" + i);
                 setTimeout(function () {
                     $(p).removeClass("pressed_" + i);
                     $("#game-div").addClass("hide");
                     $("#game-over-div").removeClass("hide");
                 }, 100);
-                audio = new Audio('Sound/wrong.wav');
+                var audio = new Audio('Sound/wrong.wav');
                 audio.play();
                 on = false;
                 flash = 0;
@@ -94,7 +94,7 @@ function sound() {
     var x = Math.random();
     x = Math.floor(x * 4);
     a.push(color[x]);
-    setInterval(lightOn, 1000);
+    interval = setInterval(lightOn, 1000);
 }
 
 function lightOn() {
