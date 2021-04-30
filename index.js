@@ -1,15 +1,11 @@
 var a = [];
 var b = [];
-var curr = 0;
 var color = ["green_poop", "red_poop", "yellow_poop", "blue_poop"];
 var start = false;
-let flash = 0;
+var flash = 0;
 var on = false;
 var id = null;
 var localStorageName = "crackalien";
-var elem = document.getElementById("start_button");
-const size_width = elem.style.width;
-const size_height = elem.height;
 var scale = 1;
 
 setInterval(function () {
@@ -33,14 +29,13 @@ function pattern_checker() {
         if (start) {
             b.push($(this).attr("id"));
             if (a[b.length - 1] === $(this).attr("id")) {
-                p = this;
+                var p = this;
                 var i = $(this).attr("id");
-                var image = $("#" + i)
                 $(this).addClass("pressed_" + i);
                 setTimeout(function () {
                     $(p).removeClass("pressed_" + i);
                 }, 100);
-                audio = new Audio('Sound/' + $(this).attr("id") + '.wav');
+                var audio = new Audio('Sound/' + $(this).attr("id") + '.wav');
                 audio.play();
                 if (a.length === b.length) {
                     setTimeout(function () {
@@ -56,14 +51,14 @@ function pattern_checker() {
                 }, 100);
                 $("#score_text").html(giveScore());
                 i = $(this).attr("id");
-                var p = this;
+                p = this;
                 $(this).addClass("pressed_" + i);
                 setTimeout(function () {
                     $(p).removeClass("pressed_" + i);
                     $("#game-div").addClass("hide");
                     $("#game-over-div").removeClass("hide");
                 }, 100);
-                var audio = new Audio('Sound/wrong.wav');
+                audio = new Audio('Sound/wrong.wav');
                 audio.play();
                 on = false;
                 flash = 0;
@@ -76,7 +71,7 @@ function pattern_checker() {
 
 }
 
-function startGame () {
+function startGame() {
     start = true;
     a = [];
     b = [];
@@ -90,8 +85,8 @@ function startGame () {
 function level() {
     flash = 0;
     var level_number = (a.length + 1);
-    level_number =level_number.toString();
-    $("#level_button").text("Level : " +level_number );
+    level_number = level_number.toString();
+    $("#level_button").text("Level : " + level_number);
     sound();
 }
 
@@ -99,7 +94,7 @@ function sound() {
     var x = Math.random();
     x = Math.floor(x * 4);
     a.push(color[x]);
-    interval = setInterval(lightOn, 1000);
+    setInterval(lightOn, 1000);
 }
 
 function lightOn() {
@@ -113,26 +108,24 @@ function lightOn() {
     } else if (flash === a.length) {
         clearInterval(interval)
         on = true;
-        console.log(on);
+        // console.log(on);
     }
 }
 
-function giveScore(){
-    var score = (a.length-1).toString();
+function giveScore() {
+    const score = (a.length - 1).toString();
     var highScore = localStorage.getItem(localStorageName) == null ? 0 :
-            localStorage.getItem(localStorageName);
-    highScore = Math.max((a.length)-1,highScore);
-    highScore = localStorage.setItem(localStorageName, highScore);
-    console.log(highScore);
-    highScore = highScore.toString();
+        localStorage.getItem(localStorageName);
+    highScore = Math.max((a.length) - 1, highScore);
+    localStorage.setItem(localStorageName, String(highScore));
+    highScore = String(highScore);
     var text = score;
-    if(score.length+highScore.length<29){
-        for(var j =0;j<29-score.length-highScore.length;j++){
-            text = text+"\xa0";
+    if (score.length + highScore.length < 29) {
+        for (var j = 0; j < 29 - score.length - highScore.length; j++) {
+            text = text + "\xa0";
         }
-    }
-    else
-        text =text+"\xa0";
-    text = text+highScore;
+    } else
+        text = text + "\xa0";
+    text = text + highScore;
     return text;
 }
