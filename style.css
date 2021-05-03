@@ -93,6 +93,7 @@ body, html {
     background-color: #FFD700;
     margin-bottom: 2.5vh;
     margin-right: 1.5vh;
+    padding: 2vh 2vh 2vh 2vh;
 }
 
 #red_poop {
@@ -102,6 +103,7 @@ body, html {
     background-color: #FA8072;
     margin-bottom: 2.5vh;
     margin-left: 1.5vh;
+    padding: 2vh 2vh 2vh 2vh;
 }
 
 #blue_poop {
@@ -110,6 +112,7 @@ body, html {
     width: 15vh;
     background-color: #00BFFF;
     margin-right: 1.5vh;
+    padding: 2vh 2vh 2vh 2vh;
 }
 
 #green_poop {
@@ -118,6 +121,7 @@ body, html {
     width: 15vh;
     background-color: #228B22;
     margin-left: 1.5vh;
+    padding: 2vh 2vh 2vh 2vh;
 }
 
 .pressed_green_poop {
