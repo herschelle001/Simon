@@ -34,8 +34,8 @@ function pattern_checker() {
             var i = $(this).attr("id");
             $(this).addClass("pressed_" + i);
             let audio = audios[color.indexOf($(this).attr("id"))];
-            if(generated_pattern.length > 1) {
-                if(user_response[user_response.length-1] === user_response[user_response.length-2]) {
+            if (generated_pattern.length > 1) {
+                if (user_response[user_response.length - 1] === user_response[user_response.length - 2]) {
                     audio = backup_audios[color.indexOf($(this).attr("id"))];
                 }
             }
@@ -94,9 +94,11 @@ function startGame() {
     generated_pattern = [];
     user_response = [];
     take_input = false;
-    for(let i=0;i<4;i++){
+    for (let i = 0; i < 4; i++) {
         j = audios[i];
-        j.play();j.pause();}
+        j.play();
+        j.pause();
+    }
     $(".start_button").addClass("level_button");
     $(".level_button").removeClass("start_button");
     level();
