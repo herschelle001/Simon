@@ -98,6 +98,9 @@ function startGame() {
         j = audios[i];
         j.play();
         j.pause();
+        j = backup_audios[i];
+        j.play();
+        j.pause();
     }
     $(".start_button").addClass("level_button");
     $(".level_button").removeClass("start_button");
