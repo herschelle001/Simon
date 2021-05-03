@@ -82,11 +82,6 @@ function startGame() {
         i.play();
         j.play();
         i.pause();
-        j.pause();
-        i.play();
-        j.play();
-        i.pause();
-        j.pause();
         if (loop !== 4) {
             i.src = 'Sound/' + color[loop] + '.wav';
             j.src = 'Sound/' + color[loop] + '.wav';
