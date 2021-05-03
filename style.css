@@ -53,6 +53,12 @@ body, html {
     width: 20vh;
 }
 
+.professor-text {
+    font-size: 3vh;
+    font-weight: 1000;
+    font-family: 'Antonio', sans-serif;
+}
+
 #start_button {
     transform: scale(1);
     transition: transform 250ms ease-in-out;
