@@ -58,15 +58,25 @@ body, html {
     font-family: 'Antonio', sans-serif;
 }
 
-#start_button {
+.start_button {
+    z-index: 2;
+    border: none;
+    border-radius: 1vh;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    font-size: 3vh;
+    background: #009245;
+    text-decoration: black;
+    width: 25vh;
+    height: 6.25vh;
+    margin-bottom: 3vh;
+    margin-top: 1.7vh;
     transform: scale(1);
     transition: transform 250ms ease-in-out;
-    width: 30vh;
-    height: 10vh;
 }
 
 
-#level_button {
+.level_button {
     z-index: 2;
     border: none;
     border-radius: 1vh;

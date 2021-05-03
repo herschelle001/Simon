@@ -12,10 +12,10 @@ var backup_audios = [new Audio(), new Audio(), new Audio(), new Audio(), new Aud
 
 setInterval(function () {
     scale = scale === 1 ? 1.1 : 1
-    $('#start_button').css('transform', 'scale(' + scale + ')');
+    $('.start_button').css('transform', 'scale(' + scale + ')');
 }, 1000)
 
-$("#start_button").click(startGame);
+$(".start_button").click(startGame);
 
 $("#play_again").click(function () {
     $("#game-div").removeClass("hide");
@@ -94,8 +94,8 @@ function startGame() {
     generated_pattern = [];
     user_response = [];
     take_input = false;
-    document.getElementById("start_button").style.display = "none";
-    $("#level_button").removeClass("hide");
+    $(".start_button").addClass("level_button");
+    $(".level_button").removeClass("start_button");
     level();
 }
 
@@ -103,7 +103,7 @@ function level() {
     flash = 0;
     var level_number = (generated_pattern.length + 1);
     level_number = level_number.toString();
-    $("#level_button").text("Level : " + level_number);
+    $(".level_button").text("Level : " + level_number);
     sound();
 }
 
