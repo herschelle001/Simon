@@ -41,7 +41,7 @@ function pattern_checker() {
             }
             setTimeout(function () {
                 $(p).removeClass("pressed_" + i);
-            }, 300);
+            }, 250);
             audio.play();
             if (generated_pattern.length === user_response.length) {
                 setTimeout(function () {
