@@ -1,4 +1,5 @@
-body {
+
+body, html {
     background-color: black;
     text-align: center;
 }
@@ -11,9 +12,18 @@ body {
     max-height: 100vh;
 }
 
+/*@font-face {*/
+/*    font-family: myFirstFont;*/
+/*    font-display: auto;*/
+/*    src: local('OpenSans-Bold'),*/
+/*       url("Font/OpenSans-Bold.ttf") format('truetype'); !* will be preloaded *!*/
+/*}*/
+
+
 .bubble {
     margin-top: -100vh;
     margin-bottom: -3vh;
+    visibility: hidden;
 }
 
 .top_poop {
@@ -40,7 +50,7 @@ body {
 
 #top_poop-1 {
     height: 20vh;
-    width: 33vh;
+    width: 20vh;
 }
 
 #start_button {
@@ -50,16 +60,12 @@ body {
     height: 10vh;
 }
 
-@font-face {
-  font-family: myFirstFont;
-  src: url("Font/OpenSans-Bold.ttf");
-}
 
 #level_button {
     z-index: 2;
     border: none;
     border-radius: 1vh;
-    font-family: myFirstFont;
+    font-family: 'Open Sans', sans-serif;
     color: black;
     font-size: 3vh;
     background: #F15A24;
@@ -78,21 +84,31 @@ body {
 #yellow_poop {
     height: 20vh;
     width: 20vh;
+    background-color: #FFD700;
+    margin-bottom: 0.8vh;
+    margin-right: 0.3vh;
 }
 
 #red_poop {
     height: 20vh;
     width: 20vh;
+    background-color: #FA8072;
+    margin-bottom: 0.8vh;
+    margin-left: 0.3vh;
 }
 
 #blue_poop {
     height: 20vh;
     width: 20vh;
+    background-color: #00BFFF;
+    margin-right: 0.3vh;
 }
 
 #green_poop {
     height: 20vh;
     width: 20vh;
+    background-color: #228B22;
+    margin-left: 0.3vh;
 }
 
 .pressed_green_poop {
@@ -137,7 +153,7 @@ body {
 }
 
 #score {
-    font-family: myFirstFont;
+    font-family: 'Open Sans', sans-serif;
     font-size: 3vh;
     margin-top: -8vh;
 }
