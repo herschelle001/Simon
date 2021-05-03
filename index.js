@@ -133,7 +133,7 @@ function lightOn() {
                 audio.play();
                 $("#" + generated_pattern[flash]).fadeOut(150).fadeIn(150);
                 flash++;
-            }, 1600);
+            }, 1000);
         } else {
             audio = audios[color.indexOf(generated_pattern[flash])];
             setTimeout(() => {
