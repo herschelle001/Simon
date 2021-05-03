@@ -88,8 +88,8 @@ body, html {
 
 #yellow_poop {
     border-radius: 1vh;
-    height: 15vh;
-    width: 15vh;
+    height: 18vh;
+    width: 18vh;
     background-color: #FFD700;
     margin-bottom: 2.5vh;
     margin-right: 1.5vh;
@@ -98,8 +98,8 @@ body, html {
 
 #red_poop {
     border-radius: 1vh;
-    height: 15vh;
-    width: 15vh;
+    height: 18vh;
+    width: 18vh;
     background-color: #FA8072;
     margin-bottom: 2.5vh;
     margin-left: 1.5vh;
@@ -108,8 +108,8 @@ body, html {
 
 #blue_poop {
     border-radius: 1vh;
-    height: 15vh;
-    width: 15vh;
+    height: 18vh;
+    width: 18vh;
     background-color: #00BFFF;
     margin-right: 1.5vh;
     padding: 2vh 2vh 2vh 2vh;
@@ -117,8 +117,8 @@ body, html {
 
 #green_poop {
     border-radius: 1vh;
-    height: 15vh;
-    width: 15vh;
+    height: 18vh;
+    width: 18vh;
     background-color: #228B22;
     margin-left: 1.5vh;
     padding: 2vh 2vh 2vh 2vh;
