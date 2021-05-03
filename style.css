@@ -91,30 +91,30 @@ body, html {
     height: 20vh;
     width: 20vh;
     background-color: #FFD700;
-    margin-bottom: 0.8vh;
-    margin-right: 0.3vh;
+    margin-bottom: 0.6vh;
+    margin-right: 0.1vh;
 }
 
 #red_poop {
     height: 20vh;
     width: 20vh;
     background-color: #FA8072;
-    margin-bottom: 0.8vh;
-    margin-left: 0.3vh;
+    margin-bottom: 0.6vh;
+    margin-left: 0.1vh;
 }
 
 #blue_poop {
     height: 20vh;
     width: 20vh;
     background-color: #00BFFF;
-    margin-right: 0.3vh;
+    margin-right: 0.1vh;
 }
 
 #green_poop {
     height: 20vh;
     width: 20vh;
     background-color: #228B22;
-    margin-left: 0.3vh;
+    margin-left: 0.1vh;
 }
 
 .pressed_green_poop {
