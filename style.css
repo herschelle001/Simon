@@ -135,23 +135,23 @@ body, html {
 }
 
 .pressed_green_poop {
-  box-shadow: 0 0 20px #009444;
-  background-color: #009444;
+    box-shadow: 0 0 20px #009444;
+    background-color: #009444;
     filter: contrast(50%);
 }
 .pressed_red_poop {
-  box-shadow: 0 0 20px #BE1E2D;
-  background-color: #BE1E2D;
+    box-shadow: 0 0 20px #BE1E2D;
+    background-color: #BE1E2D;
     filter: contrast(50%);
 }
 .pressed_blue_poop {
-  box-shadow: 0 0 20px #00AEEF;
-  background-color: #00AEEF;
+    box-shadow: 0 0 20px #00AEEF;
+    background-color: #00AEEF;
     filter: contrast(50%);
 }
 .pressed_yellow_poop {
-  box-shadow: 0 0 20px #FFB90B;
-  background-color: #FFB90B;
+    box-shadow: 0 0 20px #FFB90B;
+    background-color: #FFB90B;
     filter: contrast(50%);
 }
 
@@ -186,4 +186,3 @@ body, html {
     height: 7vh;
     width: 20vh;
 }
-
