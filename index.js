@@ -39,10 +39,10 @@ function pattern_checker() {
                     audio = backup_audios[color.indexOf($(this).attr("id"))];
                 }
             }
+            audio.play();
             setTimeout(function () {
                 $(p).removeClass("pressed_" + i);
             }, 300);
-            audio.play();
             if (generated_pattern.length === user_response.length) {
                 setTimeout(function () {
                     take_input = false;
@@ -64,13 +64,13 @@ function pattern_checker() {
             i = $(this).attr("id");
             var p = this;
             $(this).addClass("pressed_" + i);
+            audio = audios[4];
+            audio.play();
             setTimeout(function () {
                 $(p).removeClass("pressed_" + i);
                 $("#game-div").addClass("hide");
                 $("#game-over-div").removeClass("hide");
             }, 100);
-            audio = audios[4];
-            audio.play();
         }
     }
 }
