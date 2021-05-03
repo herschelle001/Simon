@@ -3,15 +3,42 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Simon</title>
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="Favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Professor Poop</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="Images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="Favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="Favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="Favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="Favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="Favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="Favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="Favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="Favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="Favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="Favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="Favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Favicons/favicon-16x16.png">
+
+    <link rel="manifest" href="Favicons/manifest.json">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="Sound/blue_poop.wav">
+    <link rel="preconnect" href="Sound/green_poop.wav">
+    <link rel="preconnect" href="Sound/red_poop.wav">
+    <link rel="preconnect" href="Sound/blue_poop.wav">
+    <link rel="preconnect" href="Sound/wrong.wav">
+    <link rel="preconnect" href="style.css">
+    <link rel="preconnect" href="index.js">
 </head>
 <body>
 
-<div>
+<div style="background-color: black">
     <img class="background-image" src='Images/Background.png' alt="bg-img">
 
     <div id="game-div" class="container-fluid">
@@ -20,8 +47,10 @@
         </div>
 
         <div class="container-fluid top_poop">
-            <img id="top_poop-1" src='Images/Top_Poop.png' alt="Top Poop 1">
+            <img id="top_poop-1" src='Images/Professor%20Poop_Master.png' alt="Top Poop 1">
         </div>
+
+        <h1 class="professor-text">PROFE<i>SS </i>OR POOP</h1>
 
         <div class="container-fluid start_button">
             <img id="start_button" src='Images/Start_button.png' alt="Start Button">
@@ -30,12 +59,12 @@
         <button id="level_button" class="hide" type="button">Level 1</button>
 
         <div class="container-fluid top_section">
-            <img class="blocks" id="yellow_poop" src='Images/Yellow_Game_Tile.png' alt="Yellow Poop">
-            <img class="blocks" id="red_poop" src='Images/Red_Game_Tile.png' alt="Red Poop">
+            <img class="blocks" id="yellow_poop" src='Images/Professor%20Poop_yellow.png' alt="Yellow Poop">
+            <img class="blocks" id="red_poop" src='Images/Professor%20Poop_red.png' alt="Red Poop">
         </div>
         <div class="container-fluid bottom_section">
-            <img class="blocks" id="blue_poop" src='Images/Blue_Game_Tile.png' alt="Blue Poop">
-            <img class="blocks" id="green_poop" src='Images/Green_Game_Tile.png' alt="Green Poop">
+            <img class="blocks" id="blue_poop" src='Images/Professor%20Poop_Master.png' alt="Blue Poop">
+            <img class="blocks" id="green_poop" src='Images/Professor%20Poop_green.png' alt="Green Poop">
         </div>
     </div>
 
@@ -47,7 +76,7 @@
         </div>
 
         <div class="container-fluid top_poop">
-            <img id="top_poop-2" src='Images/Top_Poop.png' alt="Top Poop 2">
+            <img id="top_poop-2" src='Images/Professor%20Poop_Master.png' alt="Top Poop 2">
         </div>
 
         <div class="container-fluid ">
@@ -57,7 +86,6 @@
                 <p id="score_text">00099900000000099900000</p>
             </div>
         </div>
-
 
 
         <div class="container-fluid ">
@@ -70,6 +98,6 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
         integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
         crossorigin="anonymous"></script>
-<script src="index.js"></script>
+<script rel="prefetch" src="index.js"></script>
 </body>
 </html>
