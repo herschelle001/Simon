@@ -94,6 +94,8 @@ function startGame() {
     generated_pattern = [];
     user_response = [];
     take_input = false;
+    var i = audios[0];
+    i.play();i.pause();
     $(".start_button").addClass("level_button");
     $(".level_button").removeClass("start_button");
     level();
