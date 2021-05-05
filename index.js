@@ -79,10 +79,10 @@ function startGame() {
     for (let loop = 0; loop < audios.length; loop++) {
         var i = audios[loop];
         var j = backup_audios[loop];
-        i.play();
-        j.play();
-        i.pause();
-        j.pause();
+        // i.play();
+        // j.play();
+        // i.pause();
+        // j.pause();
         if (loop !== 4) {
             i.src = 'Sound/' + color[loop] + '.wav';
             j.src = 'Sound/' + color[loop] + '.wav';
@@ -94,14 +94,14 @@ function startGame() {
     generated_pattern = [];
     user_response = [];
     take_input = false;
-    for (let i = 0; i < 4; i++) {
-        j = audios[i];
-        j.play();
-        j.pause();
-        j = backup_audios[i];
-        j.play();
-        j.pause();
-    }
+    // for (let i = 0; i < 4; i++) {
+    //     j = audios[i];
+    //     j.play();
+    //     j.pause();
+    //     j = backup_audios[i];
+    //     j.play();
+    //     j.pause();
+    // }
     $(".start_button").addClass("level_button");
     $(".level_button").removeClass("start_button");
     level();
