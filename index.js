@@ -150,7 +150,6 @@ function lightOn() {
                 flash++;
             }, 300);
         }
-
     } else if (flash === generated_pattern.length) {
         clearInterval(interval)
         take_input = true;
