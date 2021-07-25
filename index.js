@@ -84,10 +84,10 @@ function startGame() {
         i.pause();
         j.pause();
         if (loop !== 4) {
-            i.src = 'Sound/' + color[loop] + '.wav';
-            j.src = 'Sound/' + color[loop] + '.wav';
+            i.src = 'Sound/' + color[loop] + '.mp3';
+            j.src = 'Sound/' + color[loop] + '.mp3';
         } else {
-            i.src = 'Sound/wrong.wav';
+            i.src = 'Sound/wrong.mp3';
         }
     }
     start = true;
@@ -130,7 +130,7 @@ function sound() {
         }
     }
     generated_pattern.push(color[x]);
-    interval = setInterval(lightOn, 1500);
+    interval = setInterval(lightOn, 1200);
 }
 
 function lightOn() {
@@ -141,7 +141,7 @@ function lightOn() {
                 audio.play();
                 $("#" + generated_pattern[flash]).fadeOut(150).fadeIn(150);
                 flash++;
-            }, 500);
+            }, 100);
         } else {
             audio = audios[color.indexOf(generated_pattern[flash])];
             setTimeout(() => {
